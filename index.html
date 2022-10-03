@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/heart.png" type="image/x-icon">
+    <meta name="description" content="Prazer, eu sou Beatriz, eu sou do Brasil e estudo Análise de Sistemas, faço estágio com Analytics na empresa Avanade. Adoro estudar Tecnologia, gosto de estudar C#, Python e todas as outras linguagens de programação. Gosto de praticar projetos sobre Ciência de Dados, Inteligência Artificial, e também gosto de fazer projetos sobre HTML5, CSS3, Javascript e Angular.
+    Já desenvolvi dois chatboxes através da plataforma IBM.
+    Eu também tenho conhecimentos sobre git e github.
+    Meu objetivo é aprimorar cada vez mais minhas habilidades em minha carreira em Ciência de Dados, Segurança de Dados e Bases de Dados.
+    Espero poder motivar todas as pessoas do mundo para estudar tecnologia.">
+    <title>Portfólio</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navigation">
+      <div class="wrapper">
+        <a class="logo" href="#home">
+          <!-- <img src="./assets/foguete.png" alt="foguete laranja"> -->
+          <h4>Meu Portfólio</h4>
+        </a>
+
+        <div class="menu">
+          <ul>
+            <li>
+              <a onclick="closeMenu()" href="#home">Introdução</a>
+            </li>
+            <li><a onclick="closeMenu()" href="#services">Certificados</a></li>
+            <li><a onclick="closeMenu()" href="#about">Projetos</a></li>
+          </ul>
+
+          <a class="button" onclick="closeMenu()" href="#contact"
+            >Contato</a
+          >
+
+          <ul class="social-links">
+            <li>
+              <a target="_blank" href="https://www.instagram.com/avanadebrasil/"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.5 6.49997H17.51"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a target="_blank" href="https://www.linkedin.com/showcase/avanade-brasil/?originalSubdomain=br">
+                <img src="./assets/linkedin.png" alt="linkedin">
+              </a>
+            </li>
+
+            <li>
+              <a target="_blank" href="https://www.youtube.com/c/AvanadeBrasil">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22.5396 6.42C22.4208 5.94541 22.1789 5.51057 21.8382 5.15941C21.4976 4.80824 21.0703 4.55318 20.5996 4.42C18.8796 4 11.9996 4 11.9996 4C11.9996 4 5.1196 4 3.3996 4.46C2.92884 4.59318 2.50157 4.84824 2.16094 5.19941C1.82031 5.55057 1.57838 5.98541 1.4596 6.46C1.14481 8.20556 0.990831 9.97631 0.999595 11.75C0.988374 13.537 1.14236 15.3213 1.4596 17.08C1.59055 17.5398 1.8379 17.9581 2.17774 18.2945C2.51758 18.6308 2.93842 18.8738 3.3996 19C5.1196 19.46 11.9996 19.46 11.9996 19.46C11.9996 19.46 18.8796 19.46 20.5996 19C21.0703 18.8668 21.4976 18.6118 21.8382 18.2606C22.1789 17.9094 22.4208 17.4746 22.5396 17C22.852 15.2676 23.0059 13.5103 22.9996 11.75C23.0108 9.96295 22.8568 8.1787 22.5396 6.42Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9.75 15.02L15.5 11.75L9.75 8.48001V15.02Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          aria-expanded="false"
+          aria-label="Abrir menu"
+          onclick="openMenu()"
+          class="open-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 20H30"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M10 12H30"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M18 28L30 28"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <button
+          aria-expanded="true"
+          aria-label="Fechar menu"
+          onclick="closeMenu()"
+          class="close-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M30 10L10 30M10 10L30 30"
+              stroke="#FFFAF1"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h1>Sobre Mim</h1>
+          </header>
+
+          <div class="content">
+            <p>
+              Me chamo Beatriz e estudo Análise de Sistemas, faço estágio atuando em infraestrutura.
+              Estudo C#, Python e todas as outras linguagens de programação. Já pratiquei alguns projetos sobre Ciência de Dados, Inteligência Artificial, HTML5, CSS3, Javascript e Angular git e github.
+Meu objetivo é aprimorar cada vez mais minhas habilidades em minha carreira em Ciência de Dados, Desenvolvimento e Bases de Dados.
+
+              <p>
+          </div>
+        </div>
+
+        <div class="col-b">
+          <br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <iframe src="https://www.youtube.com/embed/A76YPtMcMHY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <!-- <div class="stats">
+          <div class="stat">
+            <a
+              href="https://github.com/BeatrizOliveiraFerreira/CatalogoJogos"
+              target="_blank"
+            >
+              <p>Catálogo de Jogos</p>
+            </a>
+          </div>
+
+          <div class="stat">
+            <a
+              href="https://github.com/BeatrizOliveiraFerreira/cadastro_de_livros"
+              target="_blank"
+            >
+              <p>Cadastro de Livros</p>
+            </a>
+          </div>
+
+          <div class="stat">
+            <a
+              href="https://github.com/BeatrizOliveiraFerreira/project-about-beerstock"
+              target="_blank"
+            >
+              <p>Spring Boot</p>
+            </a>
+          </div>
+
+          <div class="stat">
+            <a
+              href="https://github.com/BeatrizOliveiraFerreira/people-api-live"
+              target="_blank"
+            >
+              <p>REST API</p>
+            </a>
+          </div>
+
+          <div class="stat">
+            <a
+              href="https://github.com/BeatrizOliveiraFerreira/snakeGame.github.io"
+              target="_blank"
+            >
+              <p>Jogo da Cobrinha</p>
+            </a>
+          </div>
+
+          <div class="stat">
+            <a
+              href="https://github.com/BeatrizOliveiraFerreira/clima-previsao-do-tempo"
+              target="_blank"
+            >
+              <p>Clima-Previsão de Tempo</p>
+            </a>
+          </div>
+
+          <div class="stat">
+            <a
+              href="https://github.com/BeatrizOliveiraFerreira/projeto-harry-potter"
+              target="_blank"
+            >
+              <p>Projeto Harry Potter</p>
+            </a>
+          </div>
+
+          <div class="stat">
+            <a
+              href="https://github.com/BeatrizOliveiraFerreira/Criptomoedas.github.io"
+              target="_blank"
+            >
+              <p>Criptomoedas</p>
+            </a>
+          </div>
+
+          <div class="stat">
+            <a
+              href="https://github.com/BeatrizOliveiraFerreira/netflix"
+              target="_blank"
+            >
+              <p>Netflix</p>
+            </a>
+          </div>
+
+          <div class="stat">
+            <a
+              href="https://github.com/BeatrizOliveiraFerreira/instagram.github.io"
+              target="_blank"
+            >
+              <p>instagram</p>
+            </a>
+          </div>
+
+        </div> -->
+      </div>
+    </section>
+    
+   
+
+    <section id="services">
+      <div class="wrapper">
+        <header>
+          <h4>Certificados</h4>
+          <h2>Microsoft</h2>
+        </header>
+
+        <div class="content">
+              <img src="./assets/azure-fundamentals-900.png" alt="AI-900A" width="350" height="250">
+
+            
+              <img src="./assets/ai900.png" alt="AI-900" width="350" height="250">
+
+              <img src="./assets/dp900.png" alt="DP-900" width="350" height="250">
+
+              <img src="./assets/sc900.png" alt="DP-900" width="350" height="250">
+
+              <img src="./assets/mta.png" alt="DP-900" width="350" height="250">
+
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+        <!-- <div class="col-a">
+          <header>
+            <h2>MINHA HISTÓRIA</h2>
+          </header>
+
+          <div class="content">
+            <p>
+              No início de 2020 comecei a estudar programação na <a href="https://github.com/BeatrizOliveiraFerreira/instagram.github.io"
+              target="_blank"> Dio.me 
+            </a>
+            <p>Nesse mesmo período iniciei os meus estudos de inglês e hoje em dia o meu nível é intermediário.
+            <p>Em 2021 entrei na gradução Análise e Desenvolvimento de Sistemas e fiz alguns vídeos no youtube sobre algumas coisas que aprendi enquanto estudava.</p>
+          </div>
+        </div> -->
+
+        <section id="services">
+          <div class="wrapper">
+            <header>
+              <h4 id="about">Projetos</h4>
+            </header>
+    
+            <div class="content">
+              <div class="cards">
+                <div class="card">
+                  <!-- <img src="./assets/estrela.png" alt="estrela"> -->
+    
+                  <a
+                  href="https://github.com/BeatrizOliveiraFerreira/CatalogoJogos"
+                  target="_blank"
+                >
+                  <h3>Catálogo de Jogos</h3>
+                </a>
+                </div>
+    
+                <div class="card">
+                  <!-- <img src="./assets/estrela.png" alt=""> -->
+    
+                  <a
+                  href="https://github.com/BeatrizOliveiraFerreira/cadastro_de_livros"
+                  target="_blank"
+                >
+                  <h3>Cadastro de Livros</h3>
+                </a>
+                </div>
+    
+                <div class="card">
+                  <!-- <img src="./assets/estrela.png" alt="estrela"> -->
+    
+                  <a
+                  href="https://github.com/BeatrizOliveiraFerreira/project-about-beerstock"
+                  target="_blank"
+                >
+                  <h3>Spring Boot</h3>
+                </a>
+                </div>
+    
+                <div class="card">
+                  <!-- <img src="./assets/estrela.png" alt="estrela"> -->
+    
+                  <a
+                  href="https://github.com/BeatrizOliveiraFerreira/people-api-live"
+                  target="_blank"
+                >
+                  <h3>REST API</h3>
+                </a>
+                </div>
+    
+                <div class="card">
+                  <!-- <img src="./assets/estrela.png" alt="estrela"> -->
+    
+                  <a
+                  href="https://github.com/BeatrizOliveiraFerreira/snakeGame.github.io"
+                  target="_blank"
+                >
+                  <h3>Jogo da Cobrinha</h3>
+                </a>
+                </div>
+    
+                <div class="card">
+                <!-- <img src="./assets/estrela.png" alt="estrela"> -->
+      
+                <a
+                href="https://github.com/BeatrizOliveiraFerreira/snakeGame.github.io"
+                target="_blank"
+              >
+                <h3>Clima-Previsão de Tempo</h3>
+              </a>
+                </div>
+    
+                <div class="card">
+                  <!-- <img src="./assets/estrela.png" alt="estrela"> -->
+        
+                  <a
+                  href="https://github.com/BeatrizOliveiraFerreira/projeto-harry-potter"
+                  target="_blank"
+                >
+                  <h3>Projeto Harry Potter</h3>
+                </a>
+                </div>
+    
+                <div class="card">
+                  <!-- <img src="./assets/estrela.png" alt="estrela"> -->
+        
+                  <a
+                  href="https://github.com/BeatrizOliveiraFerreira/netflix"
+                  target="_blank"
+                >
+                  <h3>Netflix</h3>
+                </a>
+                </a>
+                </div>
+    
+                <div class="card">
+                  <!-- <img src="./assets/estrela.png" alt="estrela"> -->
+        
+                  <a
+                  href="https://github.com/BeatrizOliveiraFerreira/instagram.github.io"
+                  target="_blank"
+                >
+                  <h3>instagram</h3>
+                </a>
+                </a>
+                </div>
+    
+    
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- <div class="col-b">
+          <img
+            src="./assets/livro-bege-e-um-copo-transparente-com-suco-de-laranja.jpg"
+            alt="livro bege e um copo transparente com suco de laranja"
+          />
+        </div>
+      </div> -->
+    </section>
+
+    <section id="contact">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h2>Contatos</h2>
+          </header>
+
+          <div class="content">
+            <ul>
+              <li>
+                <a href="https://web.whatsapp.com/send?phone=5521989108402" target="_blank">
+                  <img
+                  class="whatsapp"
+                  src="./assets/icons8-whatsapp-48.png"
+                  alt="whatsapp"
+                  width="32"
+                /></a>
+
+                
+                Meu whatsapp
+              </li>
+
+              
+
+
+              <li>
+                <a href="https://www.linkedin.com/in/beatriz-oliveira-ferreira-7a90a01a4/" target="_blank">
+                  <img
+                  class="linkedin"
+                  src="./assets/linkedin.png"
+                  alt="linkedin ícones"
+                /></a>
+                Meu linkedin
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-b">
+          <div class="col-b">
+            <iframe src="https://www.youtube.com/embed/XnFLgCkAyEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="wrapper">
+        <div class="col-a">
+          <a class="logo" href="#home">
+            <span id="decola"><b>Meu</span
+            ><span id="tech">&ndash;<i>Portfólio</i></span></b></a
+          >
+
+          <p>
+            ©Meus&ndash;Projetos. <br />
+            Todos os direitos reservados.
+          </p>
+        </div>
+
+        <div class="col-b">
+          <ul class="social-links">
+            <li>
+              <a target="_blank" href=mailto:beatriz-oliveira-ferreira@hotmail.com>
+                <img src="/assets/e-mail.png" alt="e-mail" width="28">
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.linkedin.com/showcase/avanade-brasil/?originalSubdomain=br">
+                <img src="./assets/linkedin.png" alt="linkedin">
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/BeatrizOliveiraFerreira">
+                <img src="/assets/github.png" height="30" alt="Github">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <a id="backToTopButton" href="#home">
+      <svg
+        width="40"
+        height="40"
+        viewBox="0 0 40 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="20" cy="20" r="20" fill="#00856F" />
+        <path
+          d="M20 27V13"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M13 20L20 13L27 20"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </a>
+
+    <!-- ScrollReaveal Lib -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
